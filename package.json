@@ -14,5 +14,8 @@
     "@playwright/test": "^1.56.0",
     "@types/node": "^24.7.2",
     "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^10.1.0"
   }
 }

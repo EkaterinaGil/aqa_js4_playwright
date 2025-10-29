@@ -1,10 +1,10 @@
-import { test, expect, Page } from "@playwright/test";
+import test, { expect } from "@playwright/test";
 import testData, { TableRow } from "./testDataForTask2.spec";
 
 
 const url = "https://anatoly-karpovich.github.io/test-automation-sandbox";
 
-async function getTableRow(page: Page, email: string): Promise<TableRow | undefined> {
+async function getTableRow(page: any, email: string): Promise<TableRow | undefined> {
     await page.goto(url);
     await page.locator('[href="/test-automation-sandbox/sortable-table"]').click();
 
